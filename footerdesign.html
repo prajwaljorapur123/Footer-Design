@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive Footer</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #6CD0FF, #1C2E4C);
+    }
+    
+    header {
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #1C2E4C;
+        background: white;
+    }
+    
+    header span {
+        color: #6CD0FF;
+        margin-left: 5px;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .footer .text1 {
+        color: white;
+        font-family: sans-serif;
+        font-weight: 600;
+        margin: 40px 0 15px 0;
+        font-size: 25px;
+    }
+    
+    .footer .blank {
+        background: white;
+        height: 3px;
+        width: 50px;
+        margin-bottom: 40px;
+        margin-left: 6px;
+    }
+    
+    .footer .text2,
+    .footer .text3,
+    .footer .text4,
+    .footer .text5,
+    .footer .text6 {
+        color: white;
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 80px 0 20px 0;
+    }
+    
+    .footer .telegram {
+        width: 100%;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    .footer .telegram a {
+        color: darkcyan;
+        font-size: 20px;
+        text-align: right;
+        background: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .footer .footer3 .icons {
+        margin-top: 40px;
+    }
+    
+    .footer .footer3 .icons a {
+        font-size: 20px;
+        justify-content: space-around;
+        border-radius: 50%;
+        color: white;
+        border: #6CD0FF 1px solid;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    
+    .footer .footer3 .icons a:hover,
+    .footer .telegram a:hover {
+        border: solid white 1px;
+        color: white;
+        background: transparent;
+    }
+    
+    hr {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    @media(max-width:700px) {
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        hr {
+            margin-top: 50px;
+        }
+    }
+</style>
+
+<body>
+    <header>Responsive<span>Footer</span></header>
+    <div class="footer">
+
+        <div class="footer1">
+            <h1 class="text1">SERVICES</h1>
+            <div class="blank"></div>
+            <p class="text2">Testing</p>
+            <p class="text3">Web Development</p>
+            <p class="text4">Manual Testing</p>
+            <p class="text5">Automation testing</p>
+            <p class="text6">Desiging</p>
+        </div>
+
+        <div class="footer2">
+            <h1 class="text1">OUR COMPANY</h1>
+            <div class="blank"></div>
+            <p class="text2">About</p>
+            <p class="text3">Privacy Policy</p>
+            <p class="text4">Term & Condition</p>
+            <p class="text5">Contact</p>
+            <p class="text6">Help</p>
+        </div>
+
+        <div class="footer3">
+            <h1 class="text1">SUBSCRIBE TODAY</h1>
+            <div class="blank"></div>
+            <div class="telegram"> <a href="">Follow Us</a></div>
+            <div class="icons">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-youtube"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <footer>Copyright <span class="fa fa-copyright"></span> 2022 PrajwalCreation.</footer>
+
+</body>
+
+</html>
